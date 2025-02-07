@@ -109,10 +109,11 @@ class UpdateHistory extends StatefulWidget {
 }
 
 class _UpdateHistoryState extends State<UpdateHistory> {
-  late List<int> beforeUpdate1, beforeUpdate2;
+  late List<int>? beforeUpdate1, beforeUpdate2;
 
   @override
   void initState() {
+    beforeUpdate2 = null;
     beforeUpdate1 = List.from(ctrl.observableList.list);
     ctrl.observableList.addListener(() => setState(() {
           beforeUpdate2 = beforeUpdate1;

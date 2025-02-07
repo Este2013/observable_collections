@@ -100,7 +100,7 @@ class ObservableList<T> with ChangeNotifier, ChangeNotifierUpdate {
   /// numbers.sort((a, b) => a.length.compareTo(b.length));
   /// print(numbers); // [one, two, four, three] OR [two, one, four, three]
   /// ```
-  void sort([int Function(T a, T b)? compare]) => update(() => sort(compare));
+  void sort([int Function(T a, T b)? compare]) => update(() => _list.sort(compare));
 
   /// Shuffles the elements of this list randomly.
   ///
@@ -111,7 +111,7 @@ class ObservableList<T> with ChangeNotifier, ChangeNotifierUpdate {
   /// numbers.shuffle();
   /// print(numbers); // [1, 3, 4, 5, 2] OR some other random result.
   /// ```
-  void shuffle([Random? random]) => update(() => shuffle(random));
+  void shuffle([Random? random]) => update(() => _list.shuffle(random));
 
   /// allows to perform multiple changes to the list, and only notify listeners after all changes are through.
   void modify(List<T> Function(List<T> list) applyChanges) {
