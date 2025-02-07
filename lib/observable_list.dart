@@ -66,7 +66,7 @@ class ObservableList<T> with ChangeNotifier, ChangeNotifierUpdate {
 
   bool remove(T toRemove) => update(() => _list.remove(toRemove));
   T removeAt(int index) => update(() => _list.removeAt(index));
-  void removeAllWhere(bool Function(T t, List<T> currList) condition) => update(() => _list.removeWhere((t) => condition(t, list)));
+  void removeWhere(bool Function(T t, List<T> currList) condition) => update(() => _list.removeWhere((t) => condition(t, list)));
 
   void reset() => update(() => _list = []);
 
