@@ -1,6 +1,6 @@
 name: observable_datasets
 description: "Provides wrapper classes around List and Set, implementing ChangeNotifier."
-version: 0.0.3
+version: 1.0.0
 repository: 'https://github.com/Este2013/observable_collections'
 
 environment:

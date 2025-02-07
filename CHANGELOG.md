@@ -5,3 +5,7 @@
 ## 0.0.3
 
 * Fixed ObservableList.sort and .shuffle.
+
+## 1.0.0
+
+* Made a demo app. 
