@@ -127,10 +127,10 @@ packages:
     dependency: "direct main"
     description:
       name: observable_datasets
-      sha256: "4be2b08ef9e5d069fef15212541af64abf66383527f91e84099b8fa0f755574a"
+      sha256: b54a18894b17076ca86242b73cb381952b5719795b1d19de79a48e9f78763f3a
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.1"
+    version: "0.0.2"
   path:
     dependency: transitive
     description:
