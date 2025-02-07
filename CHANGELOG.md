@@ -9,3 +9,7 @@
 ## 1.0.0
 
 * Made a demo app. 
+
+## 1.0.1
+
+* removeAllWhere renamed to removeWhere
