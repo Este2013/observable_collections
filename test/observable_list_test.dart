@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:observable_collections/observable_collections.dart';
+import 'package:observable_datasets/observable_collections.dart';
 
 void main() {
   group(
